@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LegislativeData</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= favicon_link_tag asset_path("favicon.png") %>
+    <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body class="bg-gray-500">
+    <%= render "home/header" %>
+    <main
+      class="
+        container
+        m-auto
+        p-5
+        flex
+        my-[5%]
+        bg-white
+        border-4
+        border-black
+        w-[90%]
+        xl:w-full
+      "
+    >
+
+      <%= yield %>
+    </main>
+    <%= render "home/footer" %>
+
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<div id="<%= dom_id vote_result %>" class=" border-b-2 border-black pb-3">
+  <div class="flex justify-around items center">
+    <p class="my-5">
+      <strong class="block font-medium mb-1">Id:</strong>
+      <%= vote_result.id %>
+    </p>
+
+    <p class="my-5">
+      <strong class="block font-medium mb-1">Legislator:</strong>
+      <%= vote_result.legislator_id %>
+    </p>
+
+    <p class="my-5">
+      <strong class="block font-medium mb-1">Vote:</strong>
+      <%= vote_result.vote_id %>
+    </p>
+
+    <p class="my-5">
+      <strong class="block font-medium mb-1">Vote type:</strong>
+      <%= vote_result.vote_type %>
+    </p>
+  </div>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this vote result",
+    vote_result,
+    class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this vote result",
+    edit_vote_result_path(vote_result),
+    class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+  <% end %>
+</div>

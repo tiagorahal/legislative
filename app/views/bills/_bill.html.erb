@@ -1,0 +1,24 @@
+<div id="<%= dom_id bill %>" class=" border-b-2 border-black pb-3">
+  <div class="flex justify-around items center">
+    <p class="my-5">
+      <strong class="font-bold mb-1">Id:</strong>
+      <%= bill.id %>
+    </p>
+
+    <p class="my-5">
+      <strong class="font-bold mb-1">Title:</strong>
+      <%= bill.title %>
+    </p>
+
+    <p class="my-5">
+      <strong class="font-bold mb-1">Primary sponsor:</strong>
+      <%= bill.primary_sponsor_id %>
+    </p>
+  </div>
+  
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this bill", bill, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this bill', edit_bill_path(bill), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+  <% end %>
+</div>

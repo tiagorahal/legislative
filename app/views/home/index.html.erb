@@ -1,0 +1,9 @@
+
+<div class="m-auto flex justify-between items-center space-x-5">
+<h1 class="text-3xl font-bold underline">
+    Download the files here.
+</h1>
+<%= link_to "Download Legislators", legislators_path(format: :csv), download: 'legislators-support-oppose-count.csv', class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+
+<%= link_to "Download Bills", bills_path(format: :csv), download: 'bills.csv', class: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" %>
+</div>
