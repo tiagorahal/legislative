@@ -1,24 +1,37 @@
-# README
+# Legislative Data App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Built With
 
-Things you may want to cover:
+- RoR
+- Ruby
+- Tailwind
 
-* Ruby version
+## Live Demo
 
-* System dependencies
+[Checkout the live version]()
 
-* Configuration
+## Getting Started
+To get a local copy up and running follow these simple example steps.
+- Open your terminal
+- Clone the repository: `git clone git@github.com:tiagorahal/legislative.git`
+- Cd into 
+- Run bundle install and yarn install to install dependencies
+- Run ./bin/dev to run the app on the browser
 
-* Database creation
+## Author
 
-* Database initialization
+👨‍💻 **Tiago Rahal Aires**
 
-* How to run the test suite
+- GitHub: [@tiagorahal](https://github.com/tiagorahal)
+- Twitter: [@RahalAires](https://twitter.com/RahalAires)
+- LinkedIn: [Tiago Rahal Aires](https://linkedin.com/tiagorahal)
 
-* Services (job queues, cache servers, search engines, etc.)
+## 🤝 Contributing
 
-* Deployment instructions
+Contributions, issues, and feature requests are welcome!
 
-* ...
+Feel free to check the [issues page](https://github.com/tiagorahal/covid-tracker/issues).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
